@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Information Form</h1>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number">Age:</label>
+          <input type="number" id="age" name="age" min="1" max="120" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+        <div class="form-group">
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" />
+        </div>
+        <div class="form-group">
+          <label for="file">Upload File:</label>
+          <input type="file" id="file" name="file" accept=".jpg, .png, .pdf" />
+        </div>
+        <div class="form-group">
+          <label for="checkbox">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" />
+        </div>
+        <div class="form-group">
+          <label for="select">Select Country:</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="textarea">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
